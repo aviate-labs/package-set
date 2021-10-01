@@ -15,4 +15,4 @@ jobs:
           vessel-version: 0.6.2
       - run: |
           cd example
-          $(vessel bin) $(vessel sources) --check main.mo
+          $(vessel bin)/moc $(vessel sources) --check src/main.mo
