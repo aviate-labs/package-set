@@ -2,9 +2,8 @@ on:
   push:
     paths:
       - 'package-set.dhall'
-      - 'example/**'
 jobs:
-  example:
+  package-set:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,6 +12,4 @@ jobs:
           dfx-version: 0.8.1
           install-moc: false
           vessel-version: 0.6.2
-      - run: |
-          cd example
-          $(vessel bin)/moc $(vessel sources) --check src/main.mo
+      - run: vessel verify --version 0.6.10
