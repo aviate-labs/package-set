@@ -11,8 +11,8 @@ jobs:
       - uses: aviate-labs/setup-dfx@v0.2.2
         with:
           dfx-version: 0.8.1
-          install-moc: false
+          install-moc: true
           vessel-version: 0.6.2
       - run: |
           cd example
-          $(vessel bin)/moc $(vessel sources) --check src/main.mo
+          $(dfx cache show)/moc $(vessel sources) --check src/main.mo
