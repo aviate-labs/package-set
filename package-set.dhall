@@ -1,6 +1,11 @@
 let Package = { name : Text, version : Text, repo : Text, dependencies : List Text }
 
 let packages = [
+  { name = "array"
+  , repo = "https://github.com/aviate-labs/array.mo"
+  , version = "v0.1.1"
+  , dependencies = [ "base" ]
+  },
   { name = "asset-storage"
   , repo = "https://github.com/aviate-labs/asset-storage.mo"
   , version = "asset-storage-0.7.0"
@@ -18,18 +23,23 @@ let packages = [
   },
   { name = "encoding"
   , repo = "https://github.com/aviate-labs/encoding.mo"
-  , version = "v0.2.2"
-  , dependencies = [ "base" ]
+  , version = "v0.3.1"
+  , dependencies = [ "array", "base" ]
   },
   { name = "ext"
   , repo = "https://github.com/aviate-labs/ext.std"
-  , version = "v0.1.1"
-  , dependencies = [ "base", "encoding", "principal", "sha" ]
+  , version = "v0.2.0"
+  , dependencies = [ "array", "base", "encoding", "principal", "sha" ]
   },
   { name = "fmt"
   , repo = "https://github.com/aviate-labs/fmt.mo"
   , version = "v0.1.0"
   , dependencies = [ "base" ]
+  },
+  { name = "hash"
+  , repo = "https://github.com/aviate-labs/hash.mo"
+  , version = "v0.1.0"
+  , dependencies = [ "array", "base" ]
   },
   { name = "io"
   , repo = "https://github.com/aviate-labs/io.mo"
@@ -48,8 +58,8 @@ let packages = [
   },
   { name = "principal"
   , repo = "https://github.com/aviate-labs/principal.mo"
-  , version = "v0.2.2"
-  , dependencies = [ "base", "encoding", "sha" ]
+  , version = "v0.2.3"
+  , dependencies = [ "array", "base", "encoding", "hash", "sha" ]
   },
   { name = "queue"
   , repo = "https://github.com/aviate-labs/queue.mo"
@@ -79,7 +89,7 @@ let packages = [
   { name = "uuid"
   , repo = "https://github.com/aviate-labs/uuid.mo"
   , version = "v0.1.0"
-  , dependencies = [ "base", "encoding", "io", "rand" ]
+  , dependencies = [ "base", "encoding", "io" ]
   }
 ] : List Package
 

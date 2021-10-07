@@ -9,3 +9,7 @@
 ## Usage
 
 You can find a template project in the [example](./example) directory.
+
+## Contributing
+
+Make sure to run `vessel verify --version 0.6.2` after adding/upgrading packages.
