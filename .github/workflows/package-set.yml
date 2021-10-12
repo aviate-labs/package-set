@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: aviate-labs/setup-dfx@v0.2.2
         with:
-          dfx-version: 0.8.1
+          dfx-version: 0.8.2
           install-moc: false
           vessel-version: 0.6.2
       - run: vessel verify --version 0.6.10
