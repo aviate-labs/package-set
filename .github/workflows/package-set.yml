@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: aviate-labs/setup-dfx@v0.2.2
+      - uses: aviate-labs/setup-dfx@v0.2.3
         with:
-          dfx-version: 0.8.2
-          install-moc: false
+          dfx-version: 0.8.6
           vessel-version: 0.6.2
-      - run: vessel verify --version 0.6.10
+      - run: vessel verify --version 0.6.20
