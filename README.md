@@ -12,6 +12,8 @@ You can find a template project in the [example](./example) directory.
 
 ## Versions
 
+The manifest of SDK versions can be found [here](https://download.dfinity.systems/sdk/manifest.json).
+
 | DFX     | Motoko   | Package Set Version | Hash |
 |---------|----------|---------------------|------|
 | `0.8.2` | `0.6.10` | `v0.1.3`            | `ca68dad1e4a68319d44c587f505176963615d533b8ac98bdb534f37d1d6a5b47` |
@@ -19,4 +21,4 @@ You can find a template project in the [example](./example) directory.
 
 ## Contributing
 
-Make sure to run `vessel verify --version 0.6.10` after adding/upgrading packages.
+Make sure to run `vessel verify --version 0.6.20` after adding/upgrading packages.

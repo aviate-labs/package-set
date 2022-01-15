@@ -3,7 +3,7 @@ let Package = { name : Text, version : Text, repo : Text, dependencies : List Te
 let packages = [
   { name = "array"
   , repo = "https://github.com/aviate-labs/array.mo"
-  , version = "v0.1.1"
+  , version = "v0.2.0"
   , dependencies = [ "base" ]
   },
   { name = "asset-storage"
@@ -13,13 +13,18 @@ let packages = [
   },
   { name = "base"
   , repo = "https://github.com/dfinity/motoko-base"
-  , version = "f4f56295464a4b425921bd5121f6daff42d61304" -- DFX 0.8.2 | Motoko 0.6.10
+  , version = "57c3bb724dfe36928d443f5a81446872bf646de9" -- DFX 0.8.6 | Motoko 0.6.20
   , dependencies = [] : List Text
   },
   { name = "bimap"
   , repo = "https://github.com/aviate-labs/bimap.mo"
   , version = "v0.1.0"
   , dependencies = [ "base" ]
+  },
+  { name = "crypto"
+  , repo = "https://github.com/aviate-labs/crypto.mo"
+  , version = "v0.1.0"
+  , dependencies = [ "base", "encoding" ]
   },
   { name = "encoding"
   , repo = "https://github.com/aviate-labs/encoding.mo"
@@ -41,14 +46,19 @@ let packages = [
   , version = "v0.1.0"
   , dependencies = [ "array", "base" ]
   },
+  { name = "http"
+  , repo = "https://github.com/aviate-labs/http.mo"
+  , version = "v0.1.0"
+  , dependencies = [ "base" ]
+  },
   { name = "io"
   , repo = "https://github.com/aviate-labs/io.mo"
-  , version = "v0.2.0"
+  , version = "v0.3.0"
   , dependencies = [ "base" ]
   },
   { name = "json"
   , repo = "https://github.com/aviate-labs/json.mo"
-  , version = "v0.1.0"
+  , version = "v0.1.1"
   , dependencies = [ "base", "parser-combinators" ]
   },
   { name = "parser-combinators"
@@ -58,7 +68,7 @@ let packages = [
   },
   { name = "principal"
   , repo = "https://github.com/aviate-labs/principal.mo"
-  , version = "v0.2.3"
+  , version = "v0.2.4"
   , dependencies = [ "array", "base", "encoding", "hash", "sha" ]
   },
   { name = "queue"
@@ -68,10 +78,10 @@ let packages = [
   },
   { name = "rand"
   , repo = "https://github.com/aviate-labs/rand.mo"
-  , version = "v0.1.0"
+  , version = "v0.2.1"
   , dependencies = [ "base", "io" ]
   },
-  { name = "sha"
+  { name = "sha" -- Deprecated: use crypto instead.
   , repo = "https://github.com/aviate-labs/sha.mo"
   , version = "v0.1.1"
   , dependencies = [ "base", "encoding" ]
@@ -86,9 +96,14 @@ let packages = [
   , version = "v0.1.0"
   , dependencies = [ "base" ]
   },
+  { name = "ulid"
+  , repo = "https://github.com/aviate-labs/ulid.mo"
+  , version = "v0.1.0"
+  , dependencies = [ "base", "encoding", "io" ]
+  },
   { name = "uuid"
   , repo = "https://github.com/aviate-labs/uuid.mo"
-  , version = "v0.1.0"
+  , version = "v0.2.0"
   , dependencies = [ "base", "encoding", "io" ]
   }
 ] : List Package
