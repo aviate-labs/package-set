@@ -3,7 +3,7 @@ let Package = { name : Text, version : Text, repo : Text, dependencies : List Te
 let packages = [
   { name = "array"
   , repo = "https://github.com/aviate-labs/array.mo"
-  , version = "v0.1.1"
+  , version = "v0.2.0"
   , dependencies = [ "base" ]
   },
   { name = "asset-storage"
@@ -13,7 +13,7 @@ let packages = [
   },
   { name = "base"
   , repo = "https://github.com/dfinity/motoko-base"
-  , version = "f4f56295464a4b425921bd5121f6daff42d61304" -- DFX 0.8.2 | Motoko 0.6.10
+  , version = "09516e639f47af625fdd4e27ccfabce2af745d85" -- Motoko 0.6.22
   , dependencies = [] : List Text
   },
   { name = "bimap"
@@ -21,15 +21,20 @@ let packages = [
   , version = "v0.1.0"
   , dependencies = [ "base" ]
   },
+  { name = "crypto"
+  , repo = "https://github.com/aviate-labs/crypto.mo"
+  , version = "v0.1.1"
+  , dependencies = [ "base", "encoding" ]
+  },
   { name = "encoding"
   , repo = "https://github.com/aviate-labs/encoding.mo"
-  , version = "v0.3.1"
+  , version = "v0.3.2"
   , dependencies = [ "array", "base" ]
   },
   { name = "ext"
   , repo = "https://github.com/aviate-labs/ext.std"
   , version = "v0.2.0"
-  , dependencies = [ "array", "base", "encoding", "principal", "sha" ]
+  , dependencies = [ "array", "base", "encoding", "principal" ]
   },
   { name = "fmt"
   , repo = "https://github.com/aviate-labs/fmt.mo"
@@ -43,12 +48,12 @@ let packages = [
   },
   { name = "io"
   , repo = "https://github.com/aviate-labs/io.mo"
-  , version = "v0.2.0"
+  , version = "v0.3.1"
   , dependencies = [ "base" ]
   },
   { name = "json"
   , repo = "https://github.com/aviate-labs/json.mo"
-  , version = "v0.1.0"
+  , version = "v0.1.1"
   , dependencies = [ "base", "parser-combinators" ]
   },
   { name = "parser-combinators"
@@ -58,8 +63,8 @@ let packages = [
   },
   { name = "principal"
   , repo = "https://github.com/aviate-labs/principal.mo"
-  , version = "v0.2.3"
-  , dependencies = [ "array", "base", "encoding", "hash", "sha" ]
+  , version = "v0.2.5"
+  , dependencies = [ "array", "crypto", "base", "encoding", "hash" ]
   },
   { name = "queue"
   , repo = "https://github.com/aviate-labs/queue.mo"
@@ -68,17 +73,12 @@ let packages = [
   },
   { name = "rand"
   , repo = "https://github.com/aviate-labs/rand.mo"
-  , version = "v0.1.0"
-  , dependencies = [ "base", "io" ]
-  },
-  { name = "sha"
-  , repo = "https://github.com/aviate-labs/sha.mo"
-  , version = "v0.1.1"
-  , dependencies = [ "base", "encoding" ]
+  , version = "v0.2.2"
+  , dependencies = [ "base", "encoding", "io" ]
   },
   { name = "sorted"
   , repo = "https://github.com/aviate-labs/sorted.mo"
-  , version = "v0.1.3"
+  , version = "v0.1.4"
   , dependencies = [ "base" ]
   },
   { name = "stable"
@@ -86,9 +86,14 @@ let packages = [
   , version = "v0.1.0"
   , dependencies = [ "base" ]
   },
+  { name = "ulid"
+  , repo = "https://github.com/aviate-labs/ulid.mo"
+  , version = "v0.1.1"
+  , dependencies = [ "base", "encoding", "io" ]
+  },
   { name = "uuid"
   , repo = "https://github.com/aviate-labs/uuid.mo"
-  , version = "v0.1.0"
+  , version = "v0.2.0"
   , dependencies = [ "base", "encoding", "io" ]
   }
 ] : List Package
