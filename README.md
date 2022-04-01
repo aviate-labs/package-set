@@ -20,4 +20,4 @@ You can find a template project in the [example](./example) directory.
 
 ## Contributing
 
-Make sure to run `vessel verify --version 0.6.22` after adding/upgrading packages.
+Make sure to run `vessel verify --version 0.6.25` after adding/upgrading packages.

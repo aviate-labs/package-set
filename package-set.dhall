@@ -13,7 +13,7 @@ let packages = [
   },
   { name = "base"
   , repo = "https://github.com/dfinity/motoko-base"
-  , version = "09516e639f47af625fdd4e27ccfabce2af745d85" -- Motoko 0.6.22
+  , version = "aa7243269f0bd9b19f2db6d0597d7da832b47efd" -- Motoko 0.6.25
   , dependencies = [] : List Text
   },
   { name = "bimap"
@@ -23,7 +23,7 @@ let packages = [
   },
   { name = "crypto"
   , repo = "https://github.com/aviate-labs/crypto.mo"
-  , version = "v0.1.1"
+  , version = "v0.2.0"
   , dependencies = [ "base", "encoding" ]
   },
   { name = "encoding"
