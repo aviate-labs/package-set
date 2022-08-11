@@ -13,7 +13,7 @@ let packages = [
   },
   { name = "base"
   , repo = "https://github.com/dfinity/motoko-base"
-  , version = "aa7243269f0bd9b19f2db6d0597d7da832b47efd" -- Motoko 0.6.25
+  , version = "b7ddafd36e483f8af7083e5cb46cf81e57667957" -- Motoko 0.6.29
   , dependencies = [] : List Text
   },
   { name = "bimap"

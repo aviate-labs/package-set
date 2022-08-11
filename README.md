@@ -1,8 +1,8 @@
 # Vessel Package Set
 
-![dfx version](https://img.shields.io/badge/dfx-v0.8.4-blue)
-![vessel version](https://img.shields.io/badge/vessel-v0.6.2-blue)
-![motoko version](https://img.shields.io/badge/motoko-v0.6.22-blue)
+![dfx version](https://img.shields.io/badge/dfx-v0.11.0-blue)
+![vessel version](https://img.shields.io/badge/vessel-v0.6.3-blue)
+![motoko version](https://img.shields.io/badge/motoko-v0.6.29-blue)
 
 ---
 
@@ -21,4 +21,4 @@ You can find a template project in the [example](./example) directory.
 
 ## Contributing
 
-Make sure to run `vessel verify --version 0.6.25` after adding/upgrading packages.
+Make sure to run `vessel verify --version 0.6.29` after adding/upgrading packages.
