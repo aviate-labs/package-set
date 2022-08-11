@@ -1,4 +1,4 @@
 {
   dependencies = [ "base", "encoding" ],
-  compiler = None Text
+  compiler = Some "0.6.29"
 }
