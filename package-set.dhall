@@ -13,12 +13,12 @@ let packages = [
   },
   { name = "base"
   , repo = "https://github.com/dfinity/motoko-base"
-  , version = "b7ddafd36e483f8af7083e5cb46cf81e57667957" -- Motoko 0.6.29
+  , version = "c174fc4bfc0287ccbfbd5a4b55edbc8669e3f2f3" -- Motoko 0.7.0
   , dependencies = [] : List Text
   },
   { name = "bimap"
   , repo = "https://github.com/aviate-labs/bimap.mo"
-  , version = "v0.1.0"
+  , version = "v0.1.1"
   , dependencies = [ "base" ]
   },
   { name = "crypto"
@@ -53,12 +53,12 @@ let packages = [
   },
   { name = "json"
   , repo = "https://github.com/aviate-labs/json.mo"
-  , version = "v0.1.1"
+  , version = "v0.1.2"
   , dependencies = [ "base", "parser-combinators" ]
   },
   { name = "parser-combinators"
   , repo = "https://github.com/aviate-labs/parser-combinators.mo"
-  , version = "v0.1.0"
+  , version = "v0.1.1"
   , dependencies = [ "base" ]
   },
   { name = "principal"
@@ -88,7 +88,7 @@ let packages = [
   },
   { name = "ulid"
   , repo = "https://github.com/aviate-labs/ulid.mo"
-  , version = "v0.1.1"
+  , version = "v0.1.2"
   , dependencies = [ "base", "encoding", "io" ]
   },
   { name = "uuid"
