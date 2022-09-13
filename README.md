@@ -14,6 +14,7 @@ You can find a template project in the [example](./example) directory.
 
 | DFX      | Motoko   | Package Set Version | Hash |
 |----------|----------|---------------------|------|
+| `0.11.2` | `0.7.0`  | `v0.1.7`            | `433429e918c292301ae0a7fa2341d463fea2d586c3f9d03209d68ca52e987aa8` |
 | `0.11.1` | `0.6.29` | `v0.1.6`            | `9f0ad470dec38496be25aa874a93fe06807ce34546460eae5607a9294e8020a9` |
 | `0.9.3`  | `0.6.25` | `v0.1.5`            | `8cfc64fd3c6e8aa93390819b5f96dfb064afb63817971bcc8d9aa00c312ec8ab` |
 | `0.8.4`  | `0.6.22` | `v0.1.4`            | `30b7e5372284933c7394bad62ad742fec4cb09f605ce3c178d892c25a1a9722e` |
