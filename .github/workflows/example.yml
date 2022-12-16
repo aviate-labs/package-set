@@ -7,10 +7,10 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: aviate-labs/setup-dfx@v0.2.3
         with:
-          dfx-version: 0.11.2
+          dfx-version: 0.12.1
           install-moc: true
           vessel-version: 0.6.3
       - run: |

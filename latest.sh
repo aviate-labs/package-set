@@ -5,5 +5,8 @@
 grep -o 'repo = ".*"' package-set.dhall | while read line; do
     l=$(echo "$line" | sed -r 's/^.{27}//;s/.$//');
     echo $l
-    curl --silent "https://api.github.com/repos/$l/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+    tag=$(curl --silent "https://api.github.com/repos/$l/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    echo $tag
+    curl --silent "https://raw.githubusercontent.com/$l/$tag/vessel.dhall" | grep 'dependencies' | sed -E 's/(^|\])[^[]*($|\[)/ /g'
+    echo
 done

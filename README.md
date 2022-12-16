@@ -1,8 +1,8 @@
 # Vessel Package Set
 
-![dfx version](https://img.shields.io/badge/dfx-v0.11.0-blue)
+![dfx version](https://img.shields.io/badge/dfx-v0.12.1-blue)
 ![vessel version](https://img.shields.io/badge/vessel-v0.6.3-blue)
-![motoko version](https://img.shields.io/badge/motoko-v0.6.29-blue)
+![motoko version](https://img.shields.io/badge/motoko-v0.7.3-blue)
 
 ---
 
@@ -14,6 +14,7 @@ You can find a template project in the [example](./example) directory.
 
 | DFX      | Motoko   | Package Set Version | Hash |
 |----------|----------|---------------------|------|
+| `0.12.1` | `0.7.3`  | `v0.1.8`            | `9ab42c1f732299dc8c1f631d39ea6a2551414bf6efc8bbde4e11e36ebc6d7edd` |
 | `0.11.2` | `0.7.0`  | `v0.1.7`            | `433429e918c292301ae0a7fa2341d463fea2d586c3f9d03209d68ca52e987aa8` |
 | `0.11.1` | `0.6.29` | `v0.1.6`            | `9f0ad470dec38496be25aa874a93fe06807ce34546460eae5607a9294e8020a9` |
 | `0.9.3`  | `0.6.25` | `v0.1.5`            | `8cfc64fd3c6e8aa93390819b5f96dfb064afb63817971bcc8d9aa00c312ec8ab` |
@@ -23,4 +24,8 @@ You can find a template project in the [example](./example) directory.
 
 ## Contributing
 
-Make sure to run `vessel verify --version 0.6.29` after adding/upgrading packages.
+Make sure to run `vessel verify --version 0.7.3` after adding/upgrading packages.
+
+```shell
+dhall hash --file package-set.dhall
+```
